@@ -126,6 +126,7 @@ button{
 
 @media (max-width: 375px){
     body{
+        background-image: url(background-pattern-mobile.svg);
         overflow-x: hidden;
     }
 
