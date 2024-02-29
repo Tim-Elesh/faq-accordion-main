@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'WorkSans';
-    src: url(/faq-accordion-main/assets/fonts/static/WorkSans-Regular.ttf);
+    src: url(WorkSans-Regular.ttf);
 }
 
 @font-face {
     font-family: 'WorkSansBold';
-    src: url(/faq-accordion-main/assets/fonts/static/WorkSans-Bold.ttf);
+    src: url(WorkSans-Bold.ttf);
 }
 
 @font-face {
     font-family: 'WorkSansSemiBold';
-    src: url(/faq-accordion-main/assets/fonts/static/WorkSans-SemiBold.ttf);
+    src: url(WorkSans-SemiBold.ttf);
 }
 
 *{
@@ -21,7 +21,7 @@
 }
 
 body{
-    background-image: url(/faq-accordion-main/assets/images/background-pattern-desktop1920px.svg);
+    background-image: url(background-pattern-desktop1920px.svg);
     background-repeat: no-repeat;
     background-color: hsl(275, 100%, 97%);
     overflow-x: hidden;
