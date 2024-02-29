@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url(/faq-accordion-main/assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'WorkSansBold';
+    src: url(/faq-accordion-main/assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'WorkSansSemiBold';
+    src: url(/faq-accordion-main/assets/fonts/static/WorkSans-SemiBold.ttf);
+}
+
+*{
+    font-family: 'WorkSans';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/faq-accordion-main/assets/images/background-pattern-desktop1920px.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    overflow-x: hidden;
+}
+
+.container{
+    margin-top: 200px;
+    background: hsl(0, 0%, 100%);
+    width: 590px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: -1px 32px 38px 0px rgba(34, 60, 80, 0.2);
+    padding: 30px 40px 10px;
+    color: hsl(292, 42%, 14%);
+    transition: opacity 0.3s ease;
+    overflow:hidden;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.icon h2{
+    font-size: 44px;
+    font-family: 'WorkSansBold' , 'WorkSans';
+    padding-left: 18px;
+}
+
+img{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.active{
+    padding-bottom: 20px;
+    color: black;
+    opacity: 1;
+}
+
+li.top{
+    border-top: none;
+}
+
+li{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+button{
+    width: 30px;
+    height: 31px;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.questions{
+    font-family: 'WorkSansSemiBold' , 'WorkSans';
+    font-weight: 400;
+    color: hsl(292, 42%, 14%);
+    transition: all 0.3s ease;
+}
+
+.questions:hover{
+    color: hsl(292, 73%, 46%);
+}
+
+.attribution a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.attribution a:hover{
+   color: hsl(308, 85%, 46%);
+}
+
+
+@media (max-width: 1440px){
+    .container{
+        width: 590px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 450px;
+    }
+
+    .questions{
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .icon h2{
+        font-size: 36px;
+        font-family: 'WorkSansBold' , 'WorkSans';
+        padding-left: 14px;
+    }
+
+    .container{
+        overflow-y: scroll;
+        margin-top: 100px;
+        width: 250px;
+        height: 620px;
+    }
+
+    .questions{
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    li{
+        padding: 18px 0;
+    }
+
+    .questions{
+        line-height: 18px;
+    }
+}
